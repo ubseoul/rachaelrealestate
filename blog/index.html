@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metro Atlanta Real Estate Blog | Rachael Ijidakinro · REALTOR®</title>
+<meta name="description" content="Expert real estate tips, Metro Atlanta market updates, and neighborhood guides from Adeseke Rachael Ijidakinro, 5-star REALTOR® with Hexzades Realty in Lawrenceville, GA.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"Metro Atlanta Real Estate Blog","description":"Real estate tips, market updates, and neighborhood guides for Gwinnett County and Metro Atlanta","author":{"@type":"Person","name":"Adeseke Rachael Ijidakinro","jobTitle":"REALTOR®"},"url":"https://rachaelrealty.site/blog/"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7F3EE;--charcoal:#1C1C1A;--gold:#C9973A;--gold-pale:#F5EDD8;--teal:#1B6B5A;--teal-light:#E8F3F0;--text-body:#3D3D38;--text-muted:#7A7A72;--border:rgba(0,0,0,0.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);font-size:16px;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif}
+nav{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:64px;background:rgba(247,243,238,0.95);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--border)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--charcoal);text-decoration:none}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;gap:1.5rem;list-style:none}
+.nav-links a{font-size:14px;color:var(--text-muted);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover,.nav-links a.active{color:var(--charcoal)}
+.hero{background:var(--charcoal);padding:5rem 3rem 4rem;text-align:center}
+.hero-tag{display:inline-block;background:rgba(201,151,58,0.15);color:var(--gold);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:1.25rem;border:0.5px solid rgba(201,151,58,0.3)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;color:#fff;margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero p{font-size:16px;color:rgba(255,255,255,0.55);max-width:560px;margin:0 auto}
+.main{max-width:1100px;margin:0 auto;padding:4rem 2rem}
+.featured-label{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:1.25rem}
+.featured-post{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:12px;overflow:hidden;border:0.5px solid var(--border);margin-bottom:3.5rem;background:#fff}
+.fp-image{background:var(--teal);min-height:320px;display:flex;align-items:center;justify-content:center;position:relative}
+.fp-image-text{font-family:'Playfair Display',serif;font-size:4rem;color:rgba(255,255,255,0.1);font-weight:700}
+.fp-tag{position:absolute;top:1.25rem;left:1.25rem;background:var(--gold);color:#fff;font-size:11px;font-weight:500;padding:4px 12px;border-radius:100px;letter-spacing:.05em}
+.fp-body{padding:2.5rem}
+.fp-cat{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.fp-body h2{font-size:1.8rem;font-weight:700;color:var(--charcoal);margin-bottom:12px;line-height:1.3}
+.fp-body h2 a{text-decoration:none;color:inherit;transition:color 0.2s}
+.fp-body h2 a:hover{color:var(--teal)}
+.fp-body p{font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:1.5rem}
+.fp-meta{display:flex;align-items:center;gap:12px;font-size:12px;color:var(--text-muted)}
+.fp-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--text-muted)}
+.read-more{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;color:var(--teal);text-decoration:none;transition:gap 0.2s}
+.read-more:hover{gap:10px}
+.posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3.5rem}
+.post-card{background:#fff;border:0.5px solid var(--border);border-radius:10px;overflow:hidden;transition:transform 0.25s,box-shadow 0.25s}
+.post-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.post-img{height:140px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative}
+.post-cat{position:absolute;top:10px;left:10px;font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:100px}
+.cat-market{background:rgba(27,107,90,0.12);color:var(--teal)}
+.cat-buying{background:rgba(201,151,58,0.15);color:#8a6420}
+.cat-selling{background:rgba(28,28,26,0.08);color:var(--charcoal)}
+.cat-neighborhood{background:rgba(27,107,90,0.12);color:var(--teal)}
+.post-body{padding:1.25rem}
+.post-body h3{font-size:1rem;font-weight:600;color:var(--charcoal);margin-bottom:8px;line-height:1.4}
+.post-body h3 a{text-decoration:none;color:inherit;transition:color 0.2s}
+.post-body h3 a:hover{color:var(--teal)}
+.post-body p{font-size:13px;color:var(--text-muted);line-height:1.65;margin-bottom:1rem}
+.post-meta{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:8px}
+.cta-strip{background:var(--charcoal);border-radius:12px;padding:2.5rem 3rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.cta-strip h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff}
+.cta-strip h3 em{font-style:italic;color:var(--gold)}
+.cta-strip p{font-size:14px;color:rgba(255,255,255,0.5);margin-top:4px}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-size:14px;font-weight:500;text-decoration:none;transition:all 0.2s;white-space:nowrap}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#b37e2a}
+footer{background:var(--charcoal);color:rgba(255,255,255,0.4);padding:2.5rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-top:4rem}
+footer .fl{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff}
+footer .fl span{color:var(--gold)}
+footer p{font-size:12px}
+footer a{color:rgba(255,255,255,0.4);text-decoration:none}
+footer a:hover{color:var(--gold)}
+@media(max-width:768px){nav{padding:0 1.25rem}.nav-links{display:none}.featured-post{grid-template-columns:1fr}.posts-grid{grid-template-columns:1fr}.cta-strip{flex-direction:column;text-align:center}.main{padding:2.5rem 1.25rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" class="nav-logo">Rachael<span>Realty</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../home-value.html">Home Value</a></li>
+    <li><a href="index.html" class="active">Blog</a></li>
+    <li><a href="../index.html#contact" style="background:var(--charcoal);color:#fff;padding:7px 18px;border-radius:4px;font-size:13px">Get Started</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Real Estate Insights</div>
+  <h1>Metro Atlanta <em>Real Estate</em> Blog</h1>
+  <p>Market updates, buying & selling tips, and neighborhood guides from Rachael — your trusted Gwinnett County REALTOR®.</p>
+</div>
+
+<div class="main">
+
+  <div class="featured-label">Featured Article</div>
+  <div class="featured-post">
+    <div class="fp-image">
+      <div class="fp-image-text">🏘️</div>
+      <span class="fp-tag">Featured</span>
+    </div>
+    <div class="fp-body">
+      <div class="fp-cat">Market Update · Gwinnett County</div>
+      <h2><a href="#">Gwinnett County Real Estate Market: What Buyers and Sellers Need to Know in 2025</a></h2>
+      <p>Gwinnett County remains one of Metro Atlanta's most active real estate markets. Inventory is tight, demand is strong, and knowing the right strategy — whether you're buying or selling — makes all the difference. Here's what Rachael is seeing on the ground right now.</p>
+      <div class="fp-meta">
+        <span>Rachael Ijidakinro</span>
+        <span class="fp-meta-dot"></span>
+        <span>5 min read</span>
+        <span class="fp-meta-dot"></span>
+        <span>Gwinnett County, GA</span>
+      </div>
+      <br>
+      <a href="../index.html#contact" class="read-more">Talk to Rachael about the market →</a>
+    </div>
+  </div>
+
+  <div class="posts-grid">
+    <div class="post-card">
+      <div class="post-img" style="background:#E8F3F0">🏠<span class="post-cat cat-buying">Buying</span></div>
+      <div class="post-body">
+        <h3><a href="buyers-guide.html">Metro Atlanta Home Buyer's Guide 2025</a></h3>
+        <p>Everything first-time and repeat buyers need to know — from pre-approval to closing day in Gwinnett County and Metro Atlanta.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>10 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#F5EDD8">💰<span class="post-cat cat-selling">Selling</span></div>
+      <div class="post-body">
+        <h3><a href="sellers-guide.html">Metro Atlanta Home Seller's Guide 2025</a></h3>
+        <p>Pricing strategy, staging tips, and negotiation tactics to sell your home fast and for top dollar in Metro Atlanta.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>12 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#EDE6DB">📍<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="lawrenceville.html">Living in Lawrenceville, GA: Complete Guide</a></h3>
+        <p>Schools, parks, home prices, and what it's really like to live in Gwinnett County's seat city from a local REALTOR®.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>7 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#E8F3F0">🏘️<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="duluth.html">Living in Duluth, GA: Complete Guide</a></h3>
+        <p>One of Gwinnett's most competitive markets — downtown, Sugarloaf Country Club, schools, and the real estate snapshot.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>8 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#F5EDD8">⭐<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="suwanee.html">Living in Suwanee, GA: Complete Guide</a></h3>
+        <p>Nationally recognized as one of America's best places to live — Town Center, schools, and why buyers love it here.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>8 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#EDE6DB">🏙️<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="alpharetta.html">Living in Alpharetta, GA: Complete Guide</a></h3>
+        <p>Metro Atlanta's premier suburb — Avalon, tech jobs, elite schools, and a real estate market that commands top dollar.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>9 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#E8F3F0">🏠<span class="post-cat cat-buying">Buying</span></div>
+      <div class="post-body">
+        <h3><a href="#">First-Time Home Buyer Guide for Gwinnett County, GA</a></h3>
+        <p>Everything you need to know about buying your first home in Lawrenceville, Duluth, or Suwanee — from pre-approval to closing day.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>6 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#F5EDD8">💰<span class="post-cat cat-selling">Selling</span></div>
+      <div class="post-body">
+        <h3><a href="#">How to Sell Your Home Fast in Metro Atlanta (Without Leaving Money on the Table)</a></h3>
+        <p>Pricing strategy, staging tips, and the negotiation tactics Rachael uses to get sellers top dollar in any market condition.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>5 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#EDE6DB">📍<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="lawrenceville.html">Living in Lawrenceville, GA: A Complete Neighborhood Guide</a></h3>
+        <p>Schools, parks, commute times, home prices, and what it's really like to live in Gwinnett County's seat city.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>7 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#E8F3F0">📊<span class="post-cat cat-market">Market</span></div>
+      <div class="post-body">
+        <h3><a href="#">Is Now a Good Time to Buy a Home in Atlanta? A REALTOR®'s Honest Take</a></h3>
+        <p>Interest rates, inventory levels, and price trends explained in plain English — plus what Rachael recommends for buyers right now.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>4 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#F5EDD8">🔑<span class="post-cat cat-buying">Buying</span></div>
+      <div class="post-body">
+        <h3><a href="#">What to Look for During a Home Inspection in Georgia</a></h3>
+        <p>Don't skip these 12 critical things when buying a home in Metro Atlanta — from HVAC to foundation, Rachael walks you through it all.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>5 min read</span></div>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-img" style="background:#EDE6DB">🏫<span class="post-cat cat-neighborhood">Neighborhood</span></div>
+      <div class="post-body">
+        <h3><a href="#">Best School Districts in Gwinnett County: A Parent's Guide to Buying in the Right Zone</a></h3>
+        <p>Comparing Gwinnett County's top-rated elementary, middle, and high school districts and the neighborhoods that feed into them.</p>
+        <div class="post-meta"><span>Rachael Ijidakinro</span><span>·</span><span>8 min read</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-strip">
+    <div>
+      <h3>Ready to buy or sell in <em>Metro Atlanta?</em></h3>
+      <p>Get Rachael's personalized guidance — free consultation, no obligation.</p>
+    </div>
+    <a href="../index.html#contact" class="btn btn-gold">Talk to Rachael →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div><div class="fl">Rachael<span>Realty</span>.site</div><p style="margin-top:5px">© 2025 Adeseke Rachael Ijidakinro · Hexzades Realty · Lawrenceville, GA</p></div>
+  <p>Licensed Georgia REALTOR® · <a href="../index.html">Home</a> · <a href="../home-value.html">Home Value</a> · <a href="../index.html#contact">Contact</a></p>
+</footer>
+</body>
+</html>

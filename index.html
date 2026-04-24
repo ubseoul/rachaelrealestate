@@ -5,669 +5,187 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rachael Ijidakinro — Metro Atlanta REALTOR® | Hexzades Realty</title>
 <meta name="description" content="Adeseke Rachael Ijidakinro is a 5-star rated REALTOR® serving Gwinnett County and all of Metro Atlanta. Buy or sell your home with a trusted, dedicated agent.">
-
-<!-- Schema.org structured data for AI search engines -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "name": "Adeseke Rachael Ijidakinro",
-  "jobTitle": "REALTOR®",
-  "worksFor": { "@type": "Organization", "name": "Hexzades Realty" },
-  "address": { "@type": "PostalAddress", "addressLocality": "Lawrenceville", "addressRegion": "GA", "addressCountry": "US" },
-  "areaServed": ["Gwinnett County", "Lawrenceville", "Duluth", "Suwanee", "Buford", "Marietta", "Alpharetta", "Decatur", "Atlanta"],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3", "bestRating": "5" },
-  "telephone": "678-665-0000",
-  "url": "https://rachaelrealty.site",
-  "knowsAbout": ["Home buying", "Home selling", "Real estate investment", "Metro Atlanta real estate", "Gwinnett County real estate"],
-  "review": [
-    { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "description": "She made the process seamless and was readily available to answer any question I had. She put me in the best position to get my offer accepted for my dream home." },
-    { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "description": "Very knowledgeable, experienced, dedicated to her profession, and always there to ensure her client is satisfied every step of the way." },
-    { "@type": "Review", "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "description": "She is always on time with appointments. She gives good advice and is very supportive. I will recommend her to anyone that needs her service." }
-  ]
-}
+{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Adeseke Rachael Ijidakinro","jobTitle":"REALTOR®","worksFor":{"@type":"Organization","name":"Hexzades Realty"},"address":{"@type":"PostalAddress","addressLocality":"Lawrenceville","addressRegion":"GA","addressCountry":"US"},"areaServed":["Gwinnett County","Lawrenceville","Duluth","Suwanee","Buford","Marietta","Alpharetta","Decatur","Atlanta"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"3","bestRating":"5"},"url":"https://rachaelrealty.site","review":[{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"description":"She made the process seamless and was readily available to answer any question I had. She put me in the best position to get my offer accepted for my dream home."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"description":"Very knowledgeable, experienced, dedicated to her profession, and always there to ensure her client is satisfied every step of the way."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"description":"She is always on time with appointments. She gives good advice and is very supportive. I will recommend her to anyone that needs her service."}]}
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
 <style>
-  :root {
-    --cream: #F7F3EE;
-    --cream-dark: #EDE6DB;
-    --charcoal: #1C1C1A;
-    --charcoal-soft: #2E2E2B;
-    --gold: #C9973A;
-    --gold-light: #E8C97A;
-    --gold-pale: #F5EDD8;
-    --teal: #1B6B5A;
-    --teal-light: #E8F3F0;
-    --text-body: #3D3D38;
-    --text-muted: #7A7A72;
-    --border: rgba(0,0,0,0.10);
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--text-body);
-    font-size: 16px;
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: 'Playfair Display', Georgia, serif;
-    line-height: 1.2;
-  }
-
-  /* ─── NAV ─── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 3rem;
-    height: 72px;
-    background: rgba(247,243,238,0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 0.5px solid var(--border);
-    transition: all 0.3s ease;
-  }
-
-  .nav-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--charcoal);
-    text-decoration: none;
-    letter-spacing: -0.3px;
-  }
-  .nav-logo span { color: var(--gold); }
-
-  .nav-links {
-    display: flex; align-items: center; gap: 2rem;
-    list-style: none;
-  }
-  .nav-links a {
-    font-size: 14px; font-weight: 400; color: var(--text-muted);
-    text-decoration: none; letter-spacing: 0.02em;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--charcoal); }
-
-  .nav-cta {
-    background: var(--charcoal); color: #fff !important;
-    padding: 9px 22px; border-radius: 4px;
-    font-size: 13px !important; font-weight: 500 !important;
-    transition: background 0.2s !important;
-  }
-  .nav-cta:hover { background: var(--gold) !important; color: #fff !important; }
-
-  /* ─── HERO ─── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 72px;
-  }
-
-  .hero-left {
-    padding: 7rem 4rem 6rem 5rem;
-    display: flex; flex-direction: column; justify-content: center;
-    background: var(--cream);
-    position: relative;
-  }
-
-  .hero-eyebrow {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 1.5rem;
-  }
-  .eyebrow-line { width: 32px; height: 1px; background: var(--gold); }
-  .eyebrow-text {
-    font-size: 11px; font-weight: 500; letter-spacing: .12em;
-    text-transform: uppercase; color: var(--gold);
-  }
-
-  .hero-title {
-    font-size: clamp(2.8rem, 4.5vw, 4.2rem);
-    font-weight: 700;
-    color: var(--charcoal);
-    line-height: 1.08;
-    margin-bottom: 1.5rem;
-  }
-  .hero-title em {
-    font-style: italic;
-    color: var(--teal);
-  }
-
-  .hero-sub {
-    font-size: 17px; color: var(--text-muted);
-    line-height: 1.75; max-width: 440px;
-    margin-bottom: 2.5rem;
-  }
-
-  .hero-actions {
-    display: flex; gap: 14px; flex-wrap: wrap;
-    margin-bottom: 3rem;
-  }
-
-  .btn-primary {
-    background: var(--charcoal); color: #fff;
-    padding: 14px 28px; border-radius: 4px;
-    font-size: 14px; font-weight: 500; letter-spacing: 0.02em;
-    text-decoration: none; border: none; cursor: pointer;
-    transition: all 0.25s;
-    display: inline-block;
-  }
-  .btn-primary:hover { background: var(--teal); transform: translateY(-1px); }
-
-  .btn-outline {
-    background: transparent;
-    border: 1px solid var(--charcoal); color: var(--charcoal);
-    padding: 14px 28px; border-radius: 4px;
-    font-size: 14px; font-weight: 500;
-    text-decoration: none; cursor: pointer;
-    transition: all 0.25s;
-    display: inline-block;
-  }
-  .btn-outline:hover { background: var(--charcoal); color: #fff; transform: translateY(-1px); }
-
-  .hero-stats {
-    display: flex; gap: 2.5rem;
-    padding-top: 2.5rem;
-    border-top: 0.5px solid var(--border);
-  }
-  .stat-item { }
-  .stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem; font-weight: 700; color: var(--charcoal);
-    display: block; line-height: 1;
-  }
-  .stat-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
-
-  .hero-right {
-    background: var(--charcoal-soft);
-    position: relative; overflow: hidden;
-    display: flex; align-items: flex-end; justify-content: center;
-  }
-
-  .hero-image-bg {
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(160deg, rgba(201,151,58,0.15) 0%, transparent 50%),
-      linear-gradient(to bottom, transparent 40%, rgba(28,28,26,0.85) 100%);
-    z-index: 1;
-  }
-
-  .hero-house-pattern {
-    position: absolute; inset: 0;
-    opacity: 0.04;
-    background-image:
-      repeating-linear-gradient(0deg, transparent, transparent 48px, rgba(255,255,255,0.3) 48px, rgba(255,255,255,0.3) 49px),
-      repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.3) 48px, rgba(255,255,255,0.3) 49px);
-  }
-
-  .hero-agent-card {
-    position: relative; z-index: 2;
-    padding: 2.5rem 2.5rem 3rem;
-    width: 100%;
-    animation: fadeUp 1s ease 0.4s both;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .agent-photo-placeholder {
-    width: 88px; height: 88px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--gold) 0%, #E8A83A 100%);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 28px; font-weight: 700; color: #fff;
-    margin-bottom: 1.25rem;
-    border: 3px solid rgba(255,255,255,0.2);
-  }
-
-  .agent-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem; font-weight: 700; color: #fff;
-    margin-bottom: 4px;
-  }
-  .agent-title {
-    font-size: 13px; color: var(--gold-light);
-    letter-spacing: 0.05em; margin-bottom: 1.25rem;
-  }
-
-  .stars {
-    display: flex; align-items: center; gap: 4px; margin-bottom: 1rem;
-  }
-  .star { color: var(--gold); font-size: 16px; }
-  .stars-label { font-size: 13px; color: rgba(255,255,255,0.6); margin-left: 6px; }
-
-  .areas-served {
-    display: flex; flex-wrap: wrap; gap: 6px;
-  }
-  .area-tag {
-    font-size: 11px; padding: 4px 10px;
-    border: 0.5px solid rgba(255,255,255,0.2);
-    border-radius: 100px; color: rgba(255,255,255,0.6);
-  }
-
-  /* ─── TRUST BAR ─── */
-  .trust-bar {
-    background: var(--gold-pale);
-    border-top: 1px solid rgba(201,151,58,0.2);
-    border-bottom: 1px solid rgba(201,151,58,0.2);
-    padding: 1.25rem 5rem;
-    display: flex; align-items: center; gap: 3rem;
-    overflow: hidden;
-  }
-  .trust-item {
-    display: flex; align-items: center; gap: 10px;
-    white-space: nowrap;
-  }
-  .trust-icon { font-size: 18px; }
-  .trust-text { font-size: 13px; font-weight: 500; color: var(--charcoal); }
-
-  .trust-divider {
-    width: 1px; height: 28px;
-    background: rgba(201,151,58,0.3);
-    flex-shrink: 0;
-  }
-
-  /* ─── SECTIONS ─── */
-  section { padding: 6rem 5rem; }
-
-  .section-header {
-    display: flex; align-items: flex-start;
-    gap: 1.5rem; margin-bottom: 3.5rem;
-  }
-  .section-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem; font-weight: 700;
-    color: var(--cream-dark); line-height: 1;
-    margin-top: -8px; flex-shrink: 0;
-  }
-  .section-title {
-    font-size: clamp(2rem, 3vw, 2.8rem);
-    font-weight: 700; color: var(--charcoal);
-  }
-  .section-title em { font-style: italic; color: var(--teal); }
-  .section-sub { font-size: 16px; color: var(--text-muted); margin-top: 8px; }
-
-  /* ─── SERVICES ─── */
-  .services { background: #fff; }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px; background: var(--border);
-    border: 1px solid var(--border);
-    border-radius: 8px; overflow: hidden;
-  }
-  .service-card {
-    background: #fff; padding: 2.5rem 2rem;
-    transition: background 0.25s;
-    cursor: default;
-  }
-  .service-card:hover { background: var(--teal-light); }
-  .service-icon {
-    width: 44px; height: 44px;
-    background: var(--gold-pale); border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; margin-bottom: 1.25rem;
-  }
-  .service-card h3 {
-    font-size: 1.25rem; font-weight: 600;
-    color: var(--charcoal); margin-bottom: 10px;
-  }
-  .service-card p { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-
-  /* ─── AREAS ─── */
-  .areas { background: var(--charcoal); }
-  .areas .section-num { color: rgba(255,255,255,0.06); }
-  .areas .section-title { color: #fff; }
-  .areas .section-title em { color: var(--gold-light); }
-  .areas .section-sub { color: rgba(255,255,255,0.5); }
-
-  .areas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 10px;
-  }
-  .area-card {
-    background: rgba(255,255,255,0.05);
-    border: 0.5px solid rgba(255,255,255,0.1);
-    border-radius: 8px; padding: 1.25rem 1rem;
-    transition: all 0.25s; cursor: default;
-  }
-  .area-card:hover {
-    background: rgba(201,151,58,0.12);
-    border-color: rgba(201,151,58,0.3);
-    transform: translateY(-2px);
-  }
-  .area-card-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px; font-weight: 600; color: #fff;
-    margin-bottom: 4px;
-  }
-  .area-card-county { font-size: 11px; color: rgba(255,255,255,0.4); }
-
-  /* ─── REVIEWS ─── */
-  .reviews { background: var(--cream); }
-  .reviews-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
-  }
-  .review-card {
-    background: #fff; border-radius: 8px;
-    border: 0.5px solid var(--border);
-    padding: 2rem 1.75rem;
-    transition: transform 0.25s, box-shadow 0.25s;
-  }
-  .review-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
-  }
-  .review-stars { display: flex; gap: 3px; margin-bottom: 1rem; }
-  .review-text {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px; font-style: italic;
-    color: var(--charcoal); line-height: 1.75;
-    margin-bottom: 1.25rem;
-  }
-  .review-author { font-size: 13px; font-weight: 500; color: var(--text-muted); }
-  .review-source { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
-
-  /* ─── ABOUT ─── */
-  .about { background: var(--teal-light); }
-  .about-inner {
-    display: grid; grid-template-columns: 1fr 1.2fr;
-    gap: 5rem; align-items: center;
-  }
-  .about-photo {
-    aspect-ratio: 3/4; background: var(--teal);
-    border-radius: 8px; position: relative;
-    overflow: hidden; display: flex;
-    align-items: center; justify-content: center;
-  }
-  .about-photo-initials {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem; font-weight: 700; color: rgba(255,255,255,0.15);
-  }
-  .about-photo-badge {
-    position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem;
-    background: rgba(255,255,255,0.95); border-radius: 6px;
-    padding: 1rem 1.25rem;
-  }
-  .badge-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem; font-weight: 700; color: var(--charcoal);
-  }
-  .badge-title { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
-
-  .about-content { }
-  .about-content .section-header { margin-bottom: 1.5rem; }
-  .about-body { font-size: 15px; color: var(--text-body); line-height: 1.85; margin-bottom: 2rem; }
-  .about-credentials { display: flex; flex-direction: column; gap: 8px; margin-bottom: 2rem; }
-  .credential {
-    display: flex; align-items: center; gap: 10px;
-    font-size: 14px; color: var(--text-body);
-  }
-  .cred-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
-
-  /* ─── LEAD CAPTURE ─── */
-  .lead-section {
-    background: var(--charcoal);
-    padding: 5rem;
-    display: grid; grid-template-columns: 1.1fr 1fr;
-    gap: 5rem; align-items: center;
-  }
-  .lead-content .section-title { color: #fff; }
-  .lead-content .section-title em { color: var(--gold-light); }
-  .lead-content p { color: rgba(255,255,255,0.55); margin-top: 1rem; font-size: 16px; line-height: 1.8; }
-
-  .lead-form {
-    background: rgba(255,255,255,0.05);
-    border: 0.5px solid rgba(255,255,255,0.12);
-    border-radius: 12px; padding: 2.5rem;
-  }
-  .form-tabs {
-    display: flex; gap: 0; margin-bottom: 2rem;
-    background: rgba(255,255,255,0.06); border-radius: 6px;
-    padding: 3px;
-  }
-  .form-tab {
-    flex: 1; text-align: center; padding: 9px;
-    font-size: 13px; font-weight: 500; border-radius: 4px;
-    cursor: pointer; transition: all 0.2s;
-    color: rgba(255,255,255,0.45); border: none; background: none;
-  }
-  .form-tab.active {
-    background: #fff; color: var(--charcoal);
-  }
-
-  .form-group { margin-bottom: 1rem; }
-  .form-group label {
-    display: block; font-size: 12px; font-weight: 500;
-    color: rgba(255,255,255,0.5); margin-bottom: 6px;
-    letter-spacing: 0.04em;
-  }
-  .form-group input, .form-group select {
-    width: 100%; padding: 11px 14px;
-    background: rgba(255,255,255,0.08);
-    border: 0.5px solid rgba(255,255,255,0.15);
-    border-radius: 6px; color: #fff; font-size: 14px;
-    font-family: 'DM Sans', sans-serif;
-    transition: border-color 0.2s;
-    outline: none;
-    -webkit-appearance: none;
-  }
-  .form-group input::placeholder { color: rgba(255,255,255,0.3); }
-  .form-group input:focus {
-    border-color: var(--gold);
-    background: rgba(255,255,255,0.1);
-  }
-  .form-group select { color: rgba(255,255,255,0.6); }
-  .form-group select option { background: var(--charcoal); color: #fff; }
-
-  .form-submit {
-    width: 100%; padding: 14px;
-    background: var(--gold); color: #fff;
-    border: none; border-radius: 6px;
-    font-size: 14px; font-weight: 500;
-    font-family: 'DM Sans', sans-serif;
-    cursor: pointer; margin-top: 0.5rem;
-    transition: all 0.25s; letter-spacing: 0.02em;
-  }
-  .form-submit:hover {
-    background: #b8862e; transform: translateY(-1px);
-  }
-  .form-privacy {
-    text-align: center; font-size: 11px;
-    color: rgba(255,255,255,0.3); margin-top: 10px;
-  }
-
-  /* ─── AI CHAT WIDGET ─── */
-  .chat-bubble {
-    position: fixed; bottom: 28px; right: 28px; z-index: 999;
-  }
-  .chat-btn {
-    width: 60px; height: 60px; border-radius: 50%;
-    background: var(--teal); border: none; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 24px; color: #fff;
-    box-shadow: 0 4px 20px rgba(27,107,90,0.4);
-    transition: transform 0.2s, box-shadow 0.2s;
-    animation: pulse 3s ease infinite;
-  }
-  @keyframes pulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(27,107,90,0.4); }
-    50% { box-shadow: 0 4px 30px rgba(27,107,90,0.7); }
-  }
-  .chat-btn:hover { transform: scale(1.08); }
-
-  .chat-window {
-    position: absolute; bottom: 76px; right: 0;
-    width: 340px;
-    background: #fff; border-radius: 16px;
-    border: 0.5px solid var(--border);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-    overflow: hidden;
-    display: none;
-    animation: chatSlide 0.3s ease;
-  }
-  @keyframes chatSlide {
-    from { opacity: 0; transform: translateY(10px) scale(0.97); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-  }
-  .chat-window.open { display: block; }
-
-  .chat-header {
-    background: var(--teal); padding: 1rem 1.25rem;
-    display: flex; align-items: center; gap: 10px;
-  }
-  .chat-avatar {
-    width: 36px; height: 36px; border-radius: 50%;
-    background: rgba(255,255,255,0.2);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Playfair Display', serif; font-size: 14px;
-    font-weight: 700; color: #fff;
-  }
-  .chat-header-name { font-size: 14px; font-weight: 500; color: #fff; }
-  .chat-header-status { font-size: 11px; color: rgba(255,255,255,0.65); display: flex; align-items: center; gap: 4px; }
-  .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #6DEEBA; }
-
-  .chat-messages {
-    padding: 1.25rem; min-height: 180px;
-    display: flex; flex-direction: column; gap: 12px;
-  }
-  .msg {
-    max-width: 85%; padding: 10px 14px;
-    font-size: 13px; line-height: 1.5; border-radius: 12px;
-  }
-  .msg-bot { background: var(--cream); color: var(--charcoal); align-self: flex-start; border-radius: 4px 12px 12px 12px; }
-  .msg-user { background: var(--teal); color: #fff; align-self: flex-end; border-radius: 12px 4px 12px 12px; }
-
-  .chat-quick-replies {
-    display: flex; flex-wrap: wrap; gap: 6px; padding: 0 1.25rem 1rem;
-  }
-  .quick-reply {
-    font-size: 12px; padding: 6px 12px;
-    border: 1px solid var(--teal); border-radius: 100px;
-    color: var(--teal); background: none; cursor: pointer;
-    transition: all 0.2s; font-family: 'DM Sans', sans-serif;
-  }
-  .quick-reply:hover { background: var(--teal); color: #fff; }
-
-  .chat-input-row {
-    display: flex; align-items: center; gap: 8px;
-    padding: 0.75rem 1.25rem; border-top: 0.5px solid var(--border);
-  }
-  .chat-input {
-    flex: 1; border: none; outline: none; background: none;
-    font-size: 13px; font-family: 'DM Sans', sans-serif;
-    color: var(--charcoal);
-  }
-  .chat-input::placeholder { color: var(--text-muted); }
-  .chat-send {
-    background: var(--teal); color: #fff;
-    border: none; border-radius: 6px;
-    width: 32px; height: 32px; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 14px; transition: background 0.2s;
-  }
-  .chat-send:hover { background: #155548; }
-
-  /* ─── FOOTER ─── */
-  footer {
-    background: var(--charcoal); color: rgba(255,255,255,0.4);
-    padding: 3rem 5rem;
-    display: flex; justify-content: space-between; align-items: center;
-    flex-wrap: wrap; gap: 1rem;
-  }
-  footer .footer-logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px; font-weight: 700; color: #fff;
-  }
-  footer .footer-logo span { color: var(--gold); }
-  footer p { font-size: 12px; }
-  footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
-  footer a:hover { color: var(--gold); }
-
-  /* ─── ANIMATIONS ─── */
-  .fade-in {
-    opacity: 0; transform: translateY(24px);
-    animation: fadeUp 0.8s ease forwards;
-  }
-  .fade-in:nth-child(1) { animation-delay: 0.1s; }
-  .fade-in:nth-child(2) { animation-delay: 0.25s; }
-  .fade-in:nth-child(3) { animation-delay: 0.4s; }
-
-  /* ─── RESPONSIVE ─── */
-  @media (max-width: 900px) {
-    nav { padding: 0 1.5rem; }
-    .nav-links { display: none; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-right { min-height: 40vh; }
-    .hero-left { padding: 4rem 2rem; }
-    section { padding: 4rem 2rem; }
-    .trust-bar { padding: 1rem 2rem; flex-wrap: wrap; gap: 1rem; }
-    .services-grid { grid-template-columns: 1fr; }
-    .reviews-grid { grid-template-columns: 1fr; }
-    .about-inner { grid-template-columns: 1fr; }
-    .lead-section { grid-template-columns: 1fr; padding: 4rem 2rem; gap: 3rem; }
-    footer { flex-direction: column; text-align: center; padding: 2rem; }
-  }
+:root{--cream:#F7F3EE;--cream-dark:#EDE6DB;--charcoal:#1C1C1A;--charcoal-soft:#2E2E2B;--gold:#C9973A;--gold-light:#E8C97A;--gold-pale:#F5EDD8;--teal:#1B6B5A;--teal-light:#E8F3F0;--text-body:#3D3D38;--text-muted:#7A7A72;--border:rgba(0,0,0,0.10)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);font-size:16px;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.2}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;height:72px;background:rgba(247,243,238,0.92);backdrop-filter:blur(12px);border-bottom:0.5px solid var(--border);transition:all 0.3s ease}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--charcoal);text-decoration:none;letter-spacing:-0.3px}
+.nav-logo span{color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{font-size:14px;font-weight:400;color:var(--text-muted);text-decoration:none;letter-spacing:0.02em;transition:color 0.2s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-cta{background:var(--charcoal)!important;color:#fff!important;padding:9px 22px!important;border-radius:4px!important;font-size:13px!important;font-weight:500!important;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--gold)!important}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:72px}
+.hero-left{padding:7rem 4rem 6rem 5rem;display:flex;flex-direction:column;justify-content:center;background:var(--cream)}
+.hero-eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem}
+.eyebrow-line{width:32px;height:1px;background:var(--gold)}
+.eyebrow-text{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.hero-title{font-size:clamp(2.8rem,4.5vw,4.2rem);font-weight:700;color:var(--charcoal);line-height:1.08;margin-bottom:1.5rem}
+.hero-title em{font-style:italic;color:var(--teal)}
+.hero-sub{font-size:17px;color:var(--text-muted);line-height:1.75;max-width:440px;margin-bottom:2.5rem}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:3rem}
+.btn-primary{background:var(--charcoal);color:#fff;padding:14px 28px;border-radius:4px;font-size:14px;font-weight:500;letter-spacing:0.02em;text-decoration:none;border:none;cursor:pointer;transition:all 0.25s;display:inline-block}
+.btn-primary:hover{background:var(--teal);transform:translateY(-1px)}
+.btn-outline{background:transparent;border:1px solid var(--charcoal);color:var(--charcoal);padding:14px 28px;border-radius:4px;font-size:14px;font-weight:500;text-decoration:none;cursor:pointer;transition:all 0.25s;display:inline-block}
+.btn-outline:hover{background:var(--charcoal);color:#fff;transform:translateY(-1px)}
+.hero-stats{display:flex;gap:2.5rem;padding-top:2.5rem;border-top:0.5px solid var(--border)}
+.stat-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--charcoal);display:block;line-height:1}
+.stat-label{font-size:12px;color:var(--text-muted);margin-top:4px}
+.hero-right{background:var(--charcoal-soft);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.hero-image-bg{position:absolute;inset:0;background:linear-gradient(160deg,rgba(201,151,58,0.15) 0%,transparent 50%),linear-gradient(to bottom,transparent 40%,rgba(28,28,26,0.85) 100%);z-index:1}
+.hero-house-pattern{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,transparent,transparent 48px,rgba(255,255,255,0.3) 48px,rgba(255,255,255,0.3) 49px),repeating-linear-gradient(90deg,transparent,transparent 48px,rgba(255,255,255,0.3) 48px,rgba(255,255,255,0.3) 49px)}
+.hero-agent-card{position:relative;z-index:2;padding:2.5rem 2.5rem 3rem;width:100%;animation:fadeUp 1s ease 0.4s both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.agent-photo-placeholder{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,#E8A83A 100%);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#fff;margin-bottom:1.25rem;border:3px solid rgba(255,255,255,0.2)}
+.agent-name{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:#fff;margin-bottom:4px}
+.agent-title{font-size:13px;color:var(--gold-light);letter-spacing:0.05em;margin-bottom:1.25rem}
+.stars{display:flex;align-items:center;gap:4px;margin-bottom:1rem}
+.star{color:var(--gold);font-size:16px}
+.stars-label{font-size:13px;color:rgba(255,255,255,0.6);margin-left:6px}
+.areas-served{display:flex;flex-wrap:wrap;gap:6px}
+.area-tag{font-size:11px;padding:4px 10px;border:0.5px solid rgba(255,255,255,0.2);border-radius:100px;color:rgba(255,255,255,0.6)}
+.trust-bar{background:var(--gold-pale);border-top:1px solid rgba(201,151,58,0.2);border-bottom:1px solid rgba(201,151,58,0.2);padding:1.25rem 5rem;display:flex;align-items:center;gap:3rem;overflow:hidden;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.trust-icon{font-size:18px}
+.trust-text{font-size:13px;font-weight:500;color:var(--charcoal)}
+.trust-divider{width:1px;height:28px;background:rgba(201,151,58,0.3);flex-shrink:0}
+section{padding:6rem 5rem}
+.section-header{display:flex;align-items:flex-start;gap:1.5rem;margin-bottom:3.5rem}
+.section-num{font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:var(--cream-dark);line-height:1;margin-top:-8px;flex-shrink:0}
+.section-title{font-size:clamp(2rem,3vw,2.8rem);font-weight:700;color:var(--charcoal)}
+.section-title em{font-style:italic;color:var(--teal)}
+.section-sub{font-size:16px;color:var(--text-muted);margin-top:8px}
+.services{background:#fff}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.service-card{background:#fff;padding:2.5rem 2rem;transition:background 0.25s}
+.service-card:hover{background:var(--teal-light)}
+.service-icon{width:44px;height:44px;background:var(--gold-pale);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:1.25rem}
+.service-card h3{font-size:1.25rem;font-weight:600;color:var(--charcoal);margin-bottom:10px}
+.service-card p{font-size:14px;color:var(--text-muted);line-height:1.7}
+.areas{background:var(--charcoal)}
+.areas .section-num{color:rgba(255,255,255,0.06)}
+.areas .section-title{color:#fff}
+.areas .section-title em{color:var(--gold-light)}
+.areas .section-sub{color:rgba(255,255,255,0.5)}
+.areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.area-card{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);border-radius:8px;padding:1.25rem 1rem;transition:all 0.25s}
+.area-card:hover{background:rgba(201,151,58,0.12);border-color:rgba(201,151,58,0.3);transform:translateY(-2px)}
+.area-card-name{font-family:'Playfair Display',serif;font-size:15px;font-weight:600;color:#fff;margin-bottom:4px}
+.area-card-county{font-size:11px;color:rgba(255,255,255,0.4)}
+.reviews{background:var(--cream)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.review-card{background:#fff;border-radius:8px;border:0.5px solid var(--border);padding:2rem 1.75rem;transition:transform 0.25s,box-shadow 0.25s}
+.review-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.review-stars{display:flex;gap:3px;margin-bottom:1rem}
+.review-text{font-family:'Playfair Display',serif;font-size:15px;font-style:italic;color:var(--charcoal);line-height:1.75;margin-bottom:1.25rem}
+.review-author{font-size:13px;font-weight:500;color:var(--text-muted)}
+.review-source{font-size:11px;color:var(--text-muted);margin-top:2px}
+.about{background:var(--teal-light)}
+.about-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:center}
+.about-photo{aspect-ratio:3/4;background:var(--teal);border-radius:8px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.about-photo-initials{font-family:'Playfair Display',serif;font-size:5rem;font-weight:700;color:rgba(255,255,255,0.15)}
+.about-photo-badge{position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem;background:rgba(255,255,255,0.95);border-radius:6px;padding:1rem 1.25rem}
+.badge-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--charcoal)}
+.badge-title{font-size:12px;color:var(--text-muted);margin-top:2px}
+.about-body{font-size:15px;color:var(--text-body);line-height:1.85;margin-bottom:2rem}
+.about-credentials{display:flex;flex-direction:column;gap:8px;margin-bottom:2rem}
+.credential{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-body)}
+.cred-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0}
+.lead-section{background:var(--charcoal);padding:5rem;display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:center}
+.lead-content .section-title{color:#fff}
+.lead-content .section-title em{color:var(--gold-light)}
+.lead-content p{color:rgba(255,255,255,0.55);margin-top:1rem;font-size:16px;line-height:1.8}
+.lead-form{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.12);border-radius:12px;padding:2.5rem}
+.form-tabs{display:flex;gap:0;margin-bottom:2rem;background:rgba(255,255,255,0.06);border-radius:6px;padding:3px}
+.form-tab{flex:1;text-align:center;padding:9px;font-size:13px;font-weight:500;border-radius:4px;cursor:pointer;transition:all 0.2s;color:rgba(255,255,255,0.45);border:none;background:none;font-family:'DM Sans',sans-serif}
+.form-tab.active{background:#fff;color:var(--charcoal)}
+.form-group{margin-bottom:1rem}
+.form-group label{display:block;font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);margin-bottom:6px;letter-spacing:0.04em}
+.form-group input,.form-group select{width:100%;padding:11px 14px;background:rgba(255,255,255,0.08);border:0.5px solid rgba(255,255,255,0.15);border-radius:6px;color:#fff;font-size:14px;font-family:'DM Sans',sans-serif;transition:border-color 0.2s;outline:none;-webkit-appearance:none}
+.form-group input::placeholder{color:rgba(255,255,255,0.3)}
+.form-group input:focus{border-color:var(--gold);background:rgba(255,255,255,0.1)}
+.form-group select{color:rgba(255,255,255,0.6)}
+.form-group select option{background:var(--charcoal);color:#fff}
+.form-submit{width:100%;padding:14px;background:var(--gold);color:#fff;border:none;border-radius:6px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;margin-top:0.5rem;transition:all 0.25s;letter-spacing:0.02em}
+.form-submit:hover{background:#b8862e;transform:translateY(-1px)}
+.form-privacy{text-align:center;font-size:11px;color:rgba(255,255,255,0.3);margin-top:10px}
+.form-msg{display:none;text-align:center;padding:12px;border-radius:6px;font-size:14px;margin-top:10px}
+.form-msg.success{background:rgba(76,175,130,0.15);color:#4CAF82;border:0.5px solid rgba(76,175,130,0.3);display:block}
+.form-msg.error{background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);display:block}
+.chat-bubble{position:fixed;bottom:28px;right:28px;z-index:999}
+.chat-btn{width:60px;height:60px;border-radius:50%;background:var(--teal);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;box-shadow:0 4px 20px rgba(27,107,90,0.4);transition:transform 0.2s,box-shadow 0.2s;animation:pulse 3s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 4px 20px rgba(27,107,90,0.4)}50%{box-shadow:0 4px 30px rgba(27,107,90,0.7)}}
+.chat-btn:hover{transform:scale(1.08)}
+.chat-window{position:absolute;bottom:76px;right:0;width:340px;background:#fff;border-radius:16px;border:0.5px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,0.15);overflow:hidden;display:none;animation:chatSlide 0.3s ease}
+@keyframes chatSlide{from{opacity:0;transform:translateY(10px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.chat-window.open{display:block}
+.chat-header{background:var(--teal);padding:1rem 1.25rem;display:flex;align-items:center;gap:10px}
+.chat-avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:#fff}
+.chat-header-name{font-size:14px;font-weight:500;color:#fff}
+.chat-header-status{font-size:11px;color:rgba(255,255,255,0.65);display:flex;align-items:center;gap:4px}
+.status-dot{width:6px;height:6px;border-radius:50%;background:#6DEEBA}
+.chat-messages{padding:1.25rem;min-height:180px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:85%;padding:10px 14px;font-size:13px;line-height:1.5;border-radius:12px}
+.msg-bot{background:var(--cream);color:var(--charcoal);align-self:flex-start;border-radius:4px 12px 12px 12px}
+.msg-user{background:var(--teal);color:#fff;align-self:flex-end;border-radius:12px 4px 12px 12px}
+.chat-quick-replies{display:flex;flex-wrap:wrap;gap:6px;padding:0 1.25rem 1rem}
+.quick-reply{font-size:12px;padding:6px 12px;border:1px solid var(--teal);border-radius:100px;color:var(--teal);background:none;cursor:pointer;transition:all 0.2s;font-family:'DM Sans',sans-serif}
+.quick-reply:hover{background:var(--teal);color:#fff}
+.chat-input-row{display:flex;align-items:center;gap:8px;padding:0.75rem 1.25rem;border-top:0.5px solid var(--border)}
+.chat-input{flex:1;border:none;outline:none;background:none;font-size:13px;font-family:'DM Sans',sans-serif;color:var(--charcoal)}
+.chat-input::placeholder{color:var(--text-muted)}
+.chat-send{background:var(--teal);color:#fff;border:none;border-radius:6px;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;transition:background 0.2s}
+.chat-send:hover{background:#155548}
+footer{background:var(--charcoal);color:rgba(255,255,255,0.4);padding:3rem 5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+footer .footer-logo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#fff}
+footer .footer-logo span{color:var(--gold)}
+footer p{font-size:12px}
+footer a{color:rgba(255,255,255,0.4);text-decoration:none}
+footer a:hover{color:var(--gold)}
+.fade-in{opacity:0;transform:translateY(24px);animation:fadeUp 0.8s ease forwards}
+.fade-in:nth-child(1){animation-delay:0.1s}
+.fade-in:nth-child(2){animation-delay:0.25s}
+.fade-in:nth-child(3){animation-delay:0.4s}
+@media(max-width:900px){nav{padding:0 1.5rem}.nav-links{display:none}.hero{grid-template-columns:1fr}.hero-right{min-height:40vh}.hero-left{padding:4rem 2rem}section{padding:4rem 2rem}.trust-bar{padding:1rem 2rem}.services-grid{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.about-inner{grid-template-columns:1fr}.lead-section{grid-template-columns:1fr;padding:4rem 2rem;gap:3rem}footer{flex-direction:column;text-align:center;padding:2rem}}
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Rachael<span>Realty</span></a>
+  <a href="index.html" class="nav-logo">Rachael<span>Realty</span></a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#areas">Areas</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="home-value.html">Home Value</a></li>
+    <li><a href="blog/index.html">Blog</a></li>
     <li><a href="#contact" class="nav-cta">Get Started</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow fade-in">
-      <div class="eyebrow-line"></div>
-      <span class="eyebrow-text">Metro Atlanta REALTOR®</span>
-    </div>
-    <h1 class="hero-title fade-in">
-      Your <em>dream home</em> deserves a dedicated agent
-    </h1>
-    <p class="hero-sub fade-in">
-      Adeseke Rachael Ijidakinro brings expertise, warmth, and unwavering dedication to every buyer and seller across Gwinnett County and Metro Atlanta.
-    </p>
+    <div class="hero-eyebrow fade-in"><div class="eyebrow-line"></div><span class="eyebrow-text">Metro Atlanta REALTOR®</span></div>
+    <h1 class="hero-title fade-in">Your <em>dream home</em> deserves a dedicated agent</h1>
+    <p class="hero-sub fade-in">Adeseke Rachael Ijidakinro brings expertise, warmth, and unwavering dedication to every buyer and seller across Gwinnett County and Metro Atlanta.</p>
     <div class="hero-actions fade-in">
       <a href="#contact" class="btn-primary">Find My Home</a>
-      <a href="#contact" class="btn-outline">Get Home Value</a>
+      <a href="home-value.html" class="btn-outline">Get Home Value</a>
     </div>
     <div class="hero-stats fade-in">
-      <div class="stat-item">
-        <span class="stat-num">5★</span>
-        <div class="stat-label">Verified rating</div>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num">18+</span>
-        <div class="stat-label">Cities served</div>
-      </div>
-      <div class="stat-item">
-        <span class="stat-num">100%</span>
-        <div class="stat-label">Client satisfaction</div>
-      </div>
+      <div class="stat-item"><span class="stat-num">5★</span><div class="stat-label">Verified rating</div></div>
+      <div class="stat-item"><span class="stat-num">18+</span><div class="stat-label">Cities served</div></div>
+      <div class="stat-item"><span class="stat-num">100%</span><div class="stat-label">Client satisfaction</div></div>
     </div>
   </div>
   <div class="hero-right">
@@ -677,89 +195,35 @@
       <div class="agent-photo-placeholder">RI</div>
       <div class="agent-name">Adeseke Rachael Ijidakinro</div>
       <div class="agent-title">REALTOR® · HEXZADES REALTY · LAWRENCEVILLE, GA</div>
-      <div class="stars">
-        <span class="star">★</span><span class="star">★</span>
-        <span class="star">★</span><span class="star">★</span>
-        <span class="star">★</span>
-        <span class="stars-label">5.0 · 3 verified reviews</span>
-      </div>
-      <div class="areas-served">
-        <span class="area-tag">Gwinnett</span>
-        <span class="area-tag">Lawrenceville</span>
-        <span class="area-tag">Duluth</span>
-        <span class="area-tag">Suwanee</span>
-        <span class="area-tag">Marietta</span>
-        <span class="area-tag">+13 more</span>
-      </div>
+      <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="stars-label">5.0 · 3 verified reviews</span></div>
+      <div class="areas-served"><span class="area-tag">Gwinnett</span><span class="area-tag">Lawrenceville</span><span class="area-tag">Duluth</span><span class="area-tag">Suwanee</span><span class="area-tag">Marietta</span><span class="area-tag">+13 more</span></div>
     </div>
   </div>
 </section>
 
-<!-- TRUST BAR -->
 <div class="trust-bar">
-  <div class="trust-item">
-    <span class="trust-icon">🏡</span>
-    <span class="trust-text">Licensed Georgia REALTOR®</span>
-  </div>
+  <div class="trust-item"><span class="trust-icon">🏡</span><span class="trust-text">Licensed Georgia REALTOR®</span></div>
   <div class="trust-divider"></div>
-  <div class="trust-item">
-    <span class="trust-icon">⭐</span>
-    <span class="trust-text">5-Star Rated on RateMyAgent</span>
-  </div>
+  <div class="trust-item"><span class="trust-icon">⭐</span><span class="trust-text">5-Star Rated on RateMyAgent</span></div>
   <div class="trust-divider"></div>
-  <div class="trust-item">
-    <span class="trust-icon">📍</span>
-    <span class="trust-text">Hexzades Realty · Lawrenceville, GA</span>
-  </div>
+  <div class="trust-item"><span class="trust-icon">📍</span><span class="trust-text">Hexzades Realty · Lawrenceville, GA</span></div>
   <div class="trust-divider"></div>
-  <div class="trust-item">
-    <span class="trust-icon">🤝</span>
-    <span class="trust-text">Buyers & Sellers Welcome</span>
-  </div>
+  <div class="trust-item"><span class="trust-icon">🤝</span><span class="trust-text">Buyers & Sellers Welcome</span></div>
   <div class="trust-divider"></div>
-  <div class="trust-item">
-    <span class="trust-icon">📞</span>
-    <span class="trust-text">Free Consultation Available</span>
-  </div>
+  <div class="trust-item"><span class="trust-icon">📞</span><span class="trust-text">Free Consultation Available</span></div>
 </div>
 
-<!-- SERVICES -->
 <section class="services" id="services">
-  <div class="section-header">
-    <div class="section-num">01</div>
-    <div>
-      <h2 class="section-title">How Rachael <em>helps you</em></h2>
-      <p class="section-sub">Whether you're buying your first home or selling to move up, you'll have a dedicated expert at every step.</p>
-    </div>
-  </div>
+  <div class="section-header"><div class="section-num">01</div><div><h2 class="section-title">How Rachael <em>helps you</em></h2><p class="section-sub">Whether you're buying your first home or selling to move up, you'll have a dedicated expert at every step.</p></div></div>
   <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">🏠</div>
-      <h3>Home Buying</h3>
-      <p>From pre-approval to closing day, Rachael navigates the competitive Metro Atlanta market to get your offer accepted — even in multiple-offer situations.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">💰</div>
-      <h3>Home Selling</h3>
-      <p>Strategic pricing, professional marketing, and expert negotiation to sell your home fast and for top dollar. Know what your home is worth today.</p>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">📊</div>
-      <h3>Market Expertise</h3>
-      <p>Deep knowledge of Gwinnett County and surrounding Metro Atlanta neighborhoods, pricing trends, and school districts to help you make the best decision.</p>
-    </div>
+    <div class="service-card"><div class="service-icon">🏠</div><h3>Home Buying</h3><p>From pre-approval to closing day, Rachael navigates the competitive Metro Atlanta market to get your offer accepted — even in multiple-offer situations.</p></div>
+    <div class="service-card"><div class="service-icon">💰</div><h3>Home Selling</h3><p>Strategic pricing, professional marketing, and expert negotiation to sell your home fast and for top dollar. <a href="home-value.html" style="color:var(--teal)">Know what your home is worth today.</a></p></div>
+    <div class="service-card"><div class="service-icon">📊</div><h3>Market Expertise</h3><p>Deep knowledge of Gwinnett County and surrounding Metro Atlanta neighborhoods, pricing trends, and school districts to help you make the best decision.</p></div>
   </div>
 </section>
 
-<!-- AREAS -->
 <section class="areas" id="areas">
-  <div class="section-header">
-    <div class="section-num">02</div>
-    <div>
-      <h2 class="section-title">Serving all of <em>Metro Atlanta</em></h2>
-      <p class="section-sub">Rachael knows every neighborhood. Wherever you want to buy or sell, she's your local expert.</p>
-    </div>
-  </div>
+  <div class="section-header"><div class="section-num">02</div><div><h2 class="section-title">Serving all of <em>Metro Atlanta</em></h2><p class="section-sub">Rachael knows every neighborhood. Wherever you want to buy or sell, she's your local expert.</p></div></div>
   <div class="areas-grid">
     <div class="area-card"><div class="area-card-name">Lawrenceville</div><div class="area-card-county">Gwinnett Co.</div></div>
     <div class="area-card"><div class="area-card-name">Duluth</div><div class="area-card-county">Gwinnett Co.</div></div>
@@ -782,89 +246,41 @@
   </div>
 </section>
 
-<!-- REVIEWS -->
 <section class="reviews" id="reviews">
-  <div class="section-header">
-    <div class="section-num">03</div>
-    <div>
-      <h2 class="section-title">What clients <em>say</em></h2>
-      <p class="section-sub">Real verified reviews from real people Rachael helped find and sell homes across Metro Atlanta.</p>
-    </div>
-  </div>
+  <div class="section-header"><div class="section-num">03</div><div><h2 class="section-title">What clients <em>say</em></h2><p class="section-sub">Real verified reviews from real people Rachael helped find and sell homes across Metro Atlanta.</p></div></div>
   <div class="reviews-grid">
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Rachael was amazing to work with. She made the process seamless and was readily available to answer any question I had. The market was extremely competitive, and she put me in the best position to get my offer accepted for my dream home."</p>
-      <div class="review-author">Verified Buyer · Duluth, GA</div>
-      <div class="review-source">RateMyAgent · 5.0 ★</div>
-    </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"She is very knowledgeable, experienced, and very dedicated to her profession. Above all, she is always there to ensure that her client is satisfied every step of the way."</p>
-      <div class="review-author">Verified Client · Fulton County, GA</div>
-      <div class="review-source">RateMyAgent · 5.0 ★</div>
-    </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"She is always on time with appointments. She gives great advice and is very supportive. I will recommend her to anyone that needs her service — truly exceptional."</p>
-      <div class="review-author">Verified Client · Lawrenceville, GA</div>
-      <div class="review-source">RateMyAgent · 5.0 ★</div>
-    </div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Rachael was amazing to work with. She made the process seamless and was readily available to answer any question I had. The market was extremely competitive, and she put me in the best position to get my offer accepted for my dream home."</p><div class="review-author">Verified Buyer · Duluth, GA</div><div class="review-source">RateMyAgent · 5.0 ★</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"She is very knowledgeable, experienced, and very dedicated to her profession. Above all, she is always there to ensure that her client is satisfied every step of the way."</p><div class="review-author">Verified Client · Fulton County, GA</div><div class="review-source">RateMyAgent · 5.0 ★</div></div>
+    <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"She is always on time with appointments. She gives great advice and is very supportive. I will recommend her to anyone that needs her service — truly exceptional."</p><div class="review-author">Verified Client · Lawrenceville, GA</div><div class="review-source">RateMyAgent · 5.0 ★</div></div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-inner">
-    <div class="about-photo">
-      <div class="about-photo-initials">ARI</div>
-      <div class="about-photo-badge">
-        <div class="badge-name">Adeseke Rachael Ijidakinro</div>
-        <div class="badge-title">REALTOR® · Hexzades Realty · Lawrenceville, GA</div>
-      </div>
-    </div>
+    <div class="about-photo"><div class="about-photo-initials">ARI</div><div class="about-photo-badge"><div class="badge-name">Adeseke Rachael Ijidakinro</div><div class="badge-title">REALTOR® · Hexzades Realty · Lawrenceville, GA</div></div></div>
     <div class="about-content">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Meet <em>Rachael</em></h2>
-        </div>
-      </div>
-      <p class="about-body">
-        Adeseke Rachael Ijidakinro is a licensed REALTOR® with Hexzades Realty, serving buyers and sellers across Gwinnett County and all of Metro Atlanta. Known for her warmth, deep market knowledge, and unwavering commitment to client satisfaction, Rachael treats every transaction as if it were her own.
-      </p>
-      <p class="about-body">
-        Whether you're a first-time buyer navigating a competitive market, a growing family looking to upsize, or a homeowner ready to maximize the value of your sale — Rachael brings the expertise and personal dedication you deserve.
-      </p>
+      <div class="section-header"><div><h2 class="section-title">Meet <em>Rachael</em></h2></div></div>
+      <p class="about-body">Adeseke Rachael Ijidakinro is a licensed REALTOR® with Hexzades Realty, serving buyers and sellers across Gwinnett County and all of Metro Atlanta. Known for her warmth, deep market knowledge, and unwavering commitment to client satisfaction, Rachael treats every transaction as if it were her own.</p>
+      <p class="about-body">Whether you're a first-time buyer navigating a competitive market, a growing family looking to upsize, or a homeowner ready to maximize the value of your sale — Rachael brings the expertise and personal dedication you deserve.</p>
       <div class="about-credentials">
         <div class="credential"><div class="cred-dot"></div>Licensed Georgia REALTOR® in good standing</div>
         <div class="credential"><div class="cred-dot"></div>5-star verified rating across multiple platforms</div>
         <div class="credential"><div class="cred-dot"></div>Serving Gwinnett County and 17 Metro Atlanta cities</div>
         <div class="credential"><div class="cred-dot"></div>Affiliated with Hexzades Realty, Lawrenceville GA</div>
-        <div class="credential"><div class="cred-dot"></div>Specializes in both buyers and sellers</div>
       </div>
       <a href="#contact" class="btn-primary">Work With Rachael</a>
     </div>
   </div>
 </section>
 
-<!-- LEAD CAPTURE -->
 <div class="lead-section" id="contact">
   <div class="lead-content">
     <h2 class="section-title" style="font-size:2.4rem">Ready to <em>get started?</em></h2>
-    <p>Tell Rachael what you're looking for. She'll be in touch within 24 hours with a personalized plan — no pressure, no obligation.</p>
-    <div style="margin-top:2rem;display:flex;flex-direction:column;gap:12px;">
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;">📞</div>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">Free consultation — no commitment required</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;">⚡</div>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">Response within 24 hours, usually much faster</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;">🔒</div>
-        <span style="color:rgba(255,255,255,0.7);font-size:14px;">Your information is private and never shared</span>
-      </div>
+    <p>Tell Rachael what you're looking for. She'll be in touch within 24 hours — no pressure, no obligation.</p>
+    <div style="margin-top:2rem;display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px">📞</div><span style="color:rgba(255,255,255,0.7);font-size:14px">Free consultation — no commitment required</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px">⚡</div><span style="color:rgba(255,255,255,0.7);font-size:14px">Response within 24 hours, usually much faster</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;background:rgba(201,151,58,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px">🔒</div><span style="color:rgba(255,255,255,0.7);font-size:14px">Your information is private and never shared</span></div>
     </div>
   </div>
   <div class="lead-form">
@@ -873,76 +289,45 @@
       <button class="form-tab" onclick="switchTab(this,'sell')">I want to Sell</button>
     </div>
     <div id="buy-form">
-      <div class="form-group">
-        <label>YOUR FULL NAME</label>
-        <input type="text" placeholder="e.g. Jordan Williams">
-      </div>
-      <div class="form-group">
-        <label>EMAIL ADDRESS</label>
-        <input type="email" placeholder="you@email.com">
-      </div>
-      <div class="form-group">
-        <label>PHONE NUMBER</label>
-        <input type="tel" placeholder="(404) 000-0000">
-      </div>
-      <div class="form-group">
-        <label>AREA YOU'RE INTERESTED IN</label>
-        <select>
+      <div class="form-group"><label>YOUR FULL NAME</label><input type="text" id="b-name" placeholder="e.g. Jordan Williams"></div>
+      <div class="form-group"><label>EMAIL ADDRESS</label><input type="email" id="b-email" placeholder="you@email.com"></div>
+      <div class="form-group"><label>PHONE NUMBER</label><input type="tel" id="b-phone" placeholder="(404) 000-0000"></div>
+      <div class="form-group"><label>AREA YOU'RE INTERESTED IN</label>
+        <select id="b-area">
           <option value="">Select a city or county...</option>
-          <option>Lawrenceville</option><option>Duluth</option>
-          <option>Suwanee</option><option>Buford</option>
-          <option>Alpharetta</option><option>Atlanta</option>
-          <option>Marietta</option><option>Decatur</option>
+          <option>Lawrenceville</option><option>Duluth</option><option>Suwanee</option><option>Buford</option>
+          <option>Alpharetta</option><option>Atlanta</option><option>Marietta</option><option>Decatur</option>
           <option>Other Metro Atlanta area</option>
         </select>
       </div>
-      <button class="form-submit" onclick="submitForm()">Contact Rachael →</button>
+      <button class="form-submit" onclick="submitLead('buy')">Contact Rachael →</button>
     </div>
     <div id="sell-form" style="display:none">
-      <div class="form-group">
-        <label>YOUR FULL NAME</label>
-        <input type="text" placeholder="e.g. Jordan Williams">
-      </div>
-      <div class="form-group">
-        <label>EMAIL ADDRESS</label>
-        <input type="email" placeholder="you@email.com">
-      </div>
-      <div class="form-group">
-        <label>PHONE NUMBER</label>
-        <input type="tel" placeholder="(404) 000-0000">
-      </div>
-      <div class="form-group">
-        <label>PROPERTY ADDRESS</label>
-        <input type="text" placeholder="123 Main St, Lawrenceville, GA">
-      </div>
-      <button class="form-submit" onclick="submitForm()">Get My Home Value →</button>
+      <div class="form-group"><label>YOUR FULL NAME</label><input type="text" id="s-name" placeholder="e.g. Jordan Williams"></div>
+      <div class="form-group"><label>EMAIL ADDRESS</label><input type="email" id="s-email" placeholder="you@email.com"></div>
+      <div class="form-group"><label>PHONE NUMBER</label><input type="tel" id="s-phone" placeholder="(404) 000-0000"></div>
+      <div class="form-group"><label>PROPERTY ADDRESS</label><input type="text" id="s-address" placeholder="123 Main St, Lawrenceville, GA"></div>
+      <button class="form-submit" onclick="submitLead('sell')">Get My Home Value →</button>
     </div>
+    <div class="form-msg" id="form-msg"></div>
     <div class="form-privacy">🔒 Your information stays private. No spam, ever.</div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <div>
-    <div class="footer-logo">Rachael<span>Realty</span>.site</div>
-    <p style="margin-top:6px;">© 2025 Adeseke Rachael Ijidakinro · Hexzades Realty · Lawrenceville, GA</p>
-  </div>
-  <div style="display:flex;flex-direction:column;gap:6px;text-align:right;">
+  <div><div class="footer-logo">Rachael<span>Realty</span>.site</div><p style="margin-top:6px">© 2025 Adeseke Rachael Ijidakinro · Hexzades Realty · Lawrenceville, GA</p></div>
+  <div style="display:flex;flex-direction:column;gap:6px;text-align:right">
     <p>Licensed Georgia REALTOR®</p>
-    <p><a href="#services">Services</a> · <a href="#areas">Areas</a> · <a href="#reviews">Reviews</a> · <a href="#about">About</a></p>
+    <p><a href="#services">Services</a> · <a href="#areas">Areas</a> · <a href="#reviews">Reviews</a> · <a href="#about">About</a> · <a href="blog/index.html">Blog</a></p>
     <p>Equal Housing Opportunity · MLS Member</p>
   </div>
 </footer>
 
-<!-- AI CHAT WIDGET -->
 <div class="chat-bubble">
   <div class="chat-window" id="chatWindow">
     <div class="chat-header">
       <div class="chat-avatar">RI</div>
-      <div>
-        <div class="chat-header-name">Rachael's Assistant</div>
-        <div class="chat-header-status"><span class="status-dot"></span> Online · Usually replies in minutes</div>
-      </div>
+      <div><div class="chat-header-name">Rachael's Assistant</div><div class="chat-header-status"><span class="status-dot"></span> Online · Usually replies in minutes</div></div>
     </div>
     <div class="chat-messages" id="chatMessages">
       <div class="msg msg-bot">Hi there! 👋 I'm Rachael's assistant. Are you looking to <strong>buy</strong> or <strong>sell</strong> a home in Metro Atlanta?</div>
@@ -961,83 +346,63 @@
 </div>
 
 <script>
-  function toggleChat() {
-    const w = document.getElementById('chatWindow');
-    const b = document.getElementById('chatToggle');
-    w.classList.toggle('open');
-    b.textContent = w.classList.contains('open') ? '✕' : '💬';
-  }
+const FORMSPREE_ID = 'REPLACE_WITH_YOUR_FORMSPREE_ID';
 
-  function chatReply(msg) {
-    addMsg(msg, 'user');
-    document.getElementById('quickReplies').innerHTML = '';
-    setTimeout(() => {
-      if (msg.includes('buy')) {
-        addMsg("Great! Rachael works with buyers all across Metro Atlanta — from Gwinnett to Alpharetta and beyond. What area are you most interested in?", 'bot');
-        showQuickReplies(['Lawrenceville / Gwinnett', 'Alpharetta / North Atlanta', 'Atlanta / Decatur', 'Not sure yet']);
-      } else if (msg.includes('sell')) {
-        addMsg("Perfect! Rachael can give you a free home value estimate and walk you through the selling process. What city is your home in?", 'bot');
-        showQuickReplies(['Lawrenceville', 'Duluth / Suwanee', 'Marietta / Cobb', 'Other area']);
-      } else {
-        addMsg("Of course! Feel free to ask anything about buying, selling, or the Metro Atlanta market. Rachael or her team will get back to you quickly.", 'bot');
-      }
-    }, 700);
+async function submitLead(type) {
+  const msg = document.getElementById('form-msg');
+  msg.className = 'form-msg';
+  const data = type === 'buy'
+    ? { name: document.getElementById('b-name').value, email: document.getElementById('b-email').value, phone: document.getElementById('b-phone').value, area: document.getElementById('b-area').value, intent: 'Buyer', source: 'Homepage' }
+    : { name: document.getElementById('s-name').value, email: document.getElementById('s-email').value, phone: document.getElementById('s-phone').value, address: document.getElementById('s-address').value, intent: 'Seller', source: 'Homepage' };
+  if (!data.name || !data.email || !data.phone) {
+    msg.textContent = 'Please fill in your name, email, and phone.';
+    msg.className = 'form-msg error'; return;
   }
-
-  function showQuickReplies(options) {
-    const el = document.getElementById('quickReplies');
-    el.innerHTML = options.map(o => `<button class="quick-reply" onclick="chatReply('${o}')">${o}</button>`).join('');
-  }
-
-  function addMsg(text, type) {
-    const msgs = document.getElementById('chatMessages');
-    const div = document.createElement('div');
-    div.className = `msg msg-${type}`;
-    div.innerHTML = text;
-    msgs.appendChild(div);
-    msgs.scrollTop = msgs.scrollHeight;
-  }
-
-  function sendChat() {
-    const input = document.getElementById('chatInput');
-    if (!input.value.trim()) return;
-    addMsg(input.value, 'user');
-    const userMsg = input.value.toLowerCase();
-    input.value = '';
-    document.getElementById('quickReplies').innerHTML = '';
-    setTimeout(() => {
-      addMsg("Thanks for reaching out! Rachael will personally follow up with you shortly. You can also fill out the form on this page for a faster response. 😊", 'bot');
-      showQuickReplies(['Fill out contact form', 'Tell me about Rachael']);
-    }, 800);
-  }
-
-  function switchTab(el, type) {
-    document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
-    el.classList.add('active');
-    document.getElementById('buy-form').style.display = type === 'buy' ? 'block' : 'none';
-    document.getElementById('sell-form').style.display = type === 'sell' ? 'block' : 'none';
-  }
-
-  function submitForm() {
-    alert("Thank you! Rachael will be in touch with you within 24 hours. 🏡");
-  }
-
-  // Animate on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = 1;
-        e.target.style.transform = 'translateY(0)';
-      }
+  try {
+    const r = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
     });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.service-card, .area-card, .review-card').forEach(el => {
-    el.style.opacity = 0;
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-  });
+    if (r.ok) {
+      msg.textContent = '✓ Thanks! Rachael will be in touch within 24 hours.';
+      msg.className = 'form-msg success';
+    } else { throw new Error(); }
+  } catch(e) {
+    msg.textContent = 'Something went wrong. Please call or email Rachael directly.';
+    msg.className = 'form-msg error';
+  }
+}
+function switchTab(el, type) {
+  document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('buy-form').style.display = type==='buy'?'block':'none';
+  document.getElementById('sell-form').style.display = type==='sell'?'block':'none';
+  document.getElementById('form-msg').className = 'form-msg';
+}
+function toggleChat() {
+  const w = document.getElementById('chatWindow'), b = document.getElementById('chatToggle');
+  w.classList.toggle('open'); b.textContent = w.classList.contains('open') ? '✕' : '💬';
+}
+function chatReply(msg) {
+  addMsg(msg,'user'); document.getElementById('quickReplies').innerHTML='';
+  setTimeout(() => {
+    if (msg.includes('buy')) { addMsg("Great! Rachael works with buyers all across Metro Atlanta. What area are you most interested in?",'bot'); showQR(['Lawrenceville / Gwinnett','Alpharetta / North Atlanta','Atlanta / Decatur','Not sure yet']); }
+    else if (msg.includes('sell')) { addMsg("Perfect! Rachael can give you a free home value estimate. <a href='home-value.html' style='color:var(--teal)'>Click here for your free estimate →</a>",'bot'); }
+    else { addMsg("Of course! Feel free to ask anything. You can also fill out the contact form below or call Rachael directly.",'bot'); }
+  }, 700);
+}
+function showQR(opts) { document.getElementById('quickReplies').innerHTML = opts.map(o=>`<button class="quick-reply" onclick="chatReply('${o}')">${o}</button>`).join(''); }
+function addMsg(text, type) {
+  const msgs = document.getElementById('chatMessages'), div = document.createElement('div');
+  div.className = `msg msg-${type}`; div.innerHTML = text; msgs.appendChild(div); msgs.scrollTop = msgs.scrollHeight;
+}
+function sendChat() {
+  const input = document.getElementById('chatInput'); if (!input.value.trim()) return;
+  addMsg(input.value,'user'); input.value=''; document.getElementById('quickReplies').innerHTML='';
+  setTimeout(() => { addMsg("Thanks! Rachael will personally follow up with you shortly. You can also <a href='#contact' style='color:var(--teal)'>fill out the form below</a> for a faster response. 😊",'bot'); },800);
+}
+const obs = new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity=1;x.target.style.transform='translateY(0)'}}),{threshold:0.1});
+document.querySelectorAll('.service-card,.area-card,.review-card').forEach(el=>{el.style.opacity=0;el.style.transform='translateY(20px)';el.style.transition='opacity 0.6s ease,transform 0.6s ease';obs.observe(el);});
 </script>
 </body>
 </html>
