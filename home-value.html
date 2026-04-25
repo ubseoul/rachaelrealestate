@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What's My Home Worth? | Rachael Ijidakinro · Metro Atlanta REALTOR®</title>
-<meta name="description" content="Get a free, instant home value estimate for your Metro Atlanta property. Adeseke Rachael Ijidakinro, 5-star REALTOR® with Hexzades Realty, delivers personalized market analysis.">
+<meta name="description" content="Get a free, instant home value estimate for your Metro Atlanta property. Rachael Ijidakinro, 5-star REALTOR® with Deseke Real Estate Group, delivers personalized market analysis.">
 
 <script type="application/ld+json">
 {
@@ -13,8 +13,8 @@
   "name": "Free Home Value Estimate",
   "provider": {
     "@type": "RealEstateAgent",
-    "name": "Adeseke Rachael Ijidakinro",
-    "worksFor": {"@type":"Organization","name":"Hexzades Realty"},
+    "name": "Rachael Ijidakinro",
+    "worksFor": {"@type":"Organization","name":"Deseke Real Estate Group"},
     "areaServed": "Metro Atlanta, GA",
     "aggregateRating": {"@type":"AggregateRating","ratingValue":"5","reviewCount":"3"}
   },
@@ -816,7 +816,7 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 
         <div class="social-proof">
           <div class="sp-stars">★★★★★</div>
-          <div class="sp-text"><strong>Adeseke Rachael Ijidakinro</strong> · Hexzades Realty · Lawrenceville, GA</div>
+          <div class="sp-text"><strong>Rachael Ijidakinro</strong> · Deseke Real Estate Group · Lawrenceville, GA</div>
         </div>
       </div>
 
@@ -861,7 +861,7 @@ input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 <!-- FOOTER -->
 <footer class="page-footer">
   <div class="footer-brand">Rachael<span>Realty</span>.site</div>
-  <div class="footer-note">© 2025 Adeseke Rachael Ijidakinro · Hexzades Realty · Licensed Georgia REALTOR®</div>
+  <div class="footer-note">© 2025 Rachael Ijidakinro · Deseke Real Estate Group · Licensed Georgia REALTOR®</div>
 </footer>
 
 <script>
@@ -991,7 +991,7 @@ function finalSubmit() {
   var email=document.getElementById('fEmail2').value||document.getElementById('rEmail').value;
   var phone=document.getElementById('fPhone2').value||document.getElementById('rPhone').value;
   var addr=document.getElementById('address').value+', '+document.getElementById('city').value+' '+document.getElementById('zip').value;
-  fetch('https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:name,email:email,phone:phone,property_address:addr,condition:formData.condition,timeline:formData.timeline,sqft:formData.sqft,intent:'Seller - Home Value Request',source:'Home Value Funnel'})});
+  fetch('https://formspree.io/f/xpqkknwn',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:name,email:email,phone:phone,property_address:addr,condition:formData.condition,timeline:formData.timeline,sqft:formData.sqft,intent:'Seller - Home Value Request',source:'Home Value Funnel'})});
 
   document.getElementById('resultsView').style.display = 'none';
   document.getElementById('successState').classList.add('active');
